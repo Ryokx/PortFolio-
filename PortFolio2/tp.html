@@ -1,0 +1,126 @@
+<head>
+	<title>TP</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="tp.css">
+    <style>
+    body {
+  font-family: Century Gothic, sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    <body>
+        
+
+<!-- Catégorie -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Accueil</a>
+  <a href="CV.html">CV</a>
+  <a href="stage.html">Stage</a>
+  <a href="tp.html">TP</a>
+  <a href="ppe.html">PPE</a>
+  <a href="VT.html">Veille technologique</a>
+  <a href="VJ.html">Veille juridique</a>
+  <a href="contact.html">Contact</a>  
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+ <!-- JavaScript l'animation du menu qui se déroule --> 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</head>
+<!-- Corps de la page -->
+<body>
+    <!-- Titre de la page -->
+    <header><center> TP - BTS SIO </center></header>
+    <!-- Tache éffectué en TP-SI3 & SI4  -->
+  <article>
+    <div class="TPSI3">
+        <h2> TP - SI3 </h2>
+        <p> Les TP SI3 sont tous simplement des exercices donné pendant les cours à faire en cour ou a fini à la maison à rendre.<br> La matiére SI3 est principalement ciblé sur la Base de donnée dans ce cas là, le language SQL est le language principal étudié durant les cours.</p>
+            
+        <p>Vous trouverez ci-joint les différents TP's pratiqué : <a class="mis1" href="PDF/TP-SI3/SI3-TP1%20-%20Analyse-1.pdf">TP1</a> | <a class="mis1" href="PDF/TP-SI3/SI3-TP2vf.pdf">TP2</a> | <a class="mis1" href="PDF/TP-SI3/SI3-TP3-2019-fb-Creation-d-une-BD.pdf">TP3</a> | <a class="mis1" href="PDF/TP-SI3/SI3-TP4%20-%20Conception%20d_une%20BDv1.pdf"> TP4 </a>.
+        </p>
+     </div> 
+    <div class="TPSI4">
+        <h2> TP - SI4 </h2>
+            <p> Les TP SI4 sont tous simplement des exercices donné pendant les cours, à faire en cour ou a finir à la maison qui son à rendre<br> La matière SI4 est principalement ciblé sur la programation orienté objet. Le language utilisé est le Java.</p> 
+        
+           <p>Vous trouvez ci-joint les différents TP's pratiqué : <a class="mis1" href="PDF/TP-SI4/Tp1/"> TP1 </a> | <a class="mis1" href="PDF/TP-SI4/TP2/"> TP2 </a> | <a class="mis1" href="PDF/TP-SI4/TP3-SI4/"> TP3 </a> | <a class="mis1" href="PDF/TP-SI4/tp4/"> TP4 </a>.</p>
+     </div> 
+       <div class="TPSI3">
+        <h2> TP - SLAM5 </h2>
+        <p> Les TP SLAM5 sont tous simplement des exercices donné pendant les cours à faire en cour ou a fini à la maison à rendre.<br> La matiére SI3 est principalement ciblé sur la Base de donnée dans ce cas là, le language SQL est le language principal étudié durant les cours. Mais également des modéles relationels</p>
+            
+        <p>Vous trouverez ci-joint les différents TP's pratiqué : <a class="mis1" href="PDF/TP6%20Compte%20Rendu.pdf">TP6</a> | <a class="mis1" href="PDF/TP7%20Architectures%20logicielles%20avanc%C3%A9es%20BENASID%20ABDEL.pdf">TP7</a>.
+        </p>
+     </div> 
+      <div class="TPSI4">
+        <h2> TP - CAS </h2>
+            <p> Les TP CAS sont tous simplement des exercices donné pendant les cours, à faire en cour ou a finir à la maison qui son à rendre<br> Ce sont généralement les précédents SUJET d'examen des années passé.</p> 
+        
+           <p>Vous trouvez ci-joint les différents CAS pratiqué : <a class="mis1" href="PDF/Cas%20A%C3%A9roplan.pdf"> Cas AEROPLAN </a> | <a class="mis1" href="PDF/Cas%20Music%20BENSAID%20ABDEL.pdf"> Cas Music </a> | <a class="mis1" href="PDF/Cas%20Trisel%20BENSAID%20ABDEL.pdf"> Cas Trisel </a>
+     </div> 
+  </article>    
+  
+</body>
+    <!-- Bas de page -->
+    <footer>
+    <p> Copyright 2020 Bensaid Abdel - Toute reproduction interdite </p>
+    </footer>
+

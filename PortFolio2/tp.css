@@ -1,0 +1,270 @@
+
+.mis1{
+    color: white;
+}
+
+.mis1:hover{
+    color: gray;
+}
+.mis1:visited{
+    color: white;
+}
+
+/* Paramétre du titre de la page */
+header{
+    font-size: 50px;
+    color: gray;
+}
+
+/* Paramétre du corps de la page */
+body{
+	font-family: 'Century Gothic', Arial, sans-serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+	background:url(back.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+
+/* Paramétre des TP SI3 & SI4 */
+.TPSI3{
+    color: aliceblue;
+    float: left;
+	font-size: 20px;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.6);
+    border:10px solid rgba(0, 0, 0, 0.6);
+    border-width: 10px;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-top: 1%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.TPSI4{
+    color: aliceblue;
+    float: left;
+	font-size: 20px;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.6);
+    border:10px solid rgba(0, 0, 0, 0.6);
+    border-width: 10px;
+    border-radius: 15px;
+    margin-left: 100px;
+    margin-top: 1%;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
+
+/* Bas de Page */
+footer{
+    text-align: center;
+    background-color: #C5C5C5;
+    color:black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+/* Reset de la marge seulement pour la liste ul qui l'enfant de nav */
+nav > ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* On enlève les puces devant tous les élements li appartenant à notre élément nav */
+
+nav li{
+	list-style-type: none;
+
+}
+
+/* On affiche seulement les éléments li correspondant à nos onglets de menu en ligne */
+
+nav > ul > li {
+	float: left;
+}
+
+/* Camoufler les sous menu si on ne passe pas la souris dessus */
+
+.submenu{
+	display: none;
+}
+
+/* On rend notre case à cocher invisible */
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+/*On chache le bouton affichant le menu mobile */
+
+.menu-mobile{
+	display: none;
+}
+
+
+/* Ettirement du menu pour qu'il prenne toute la ligne & couleur de la barre */
+
+nav{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/* On affiche seulement les élements li correspondant à
+nos onglets de menu en ligne (côte à côte) */
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+/* Un "hack" CSS ( clearfix) */
+
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Changement de type de Display et enlever le trait de soulignement */
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+/* Changement de couleurs de nos liens de menu pour que ce soit visible*/
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFFAFA;
+}
+
+/* Création de la classe :hover qui permet au sous onglet de s'afficher seulement quand
+la souris passera dessus */
+
+/* Faire en sorte que chaque sous onglet s'affiche sous leurs onglet parent en utilisant
+position:relative pour les onglets en CSS */
+
+/* Deplus reset le padding ( la marge ) de nos sous menus pour ne pas avoir de probléme daffichage */
+
+/* z-index permet au sous menus de safficher par dessus le reste de la page */
+
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+/* Rajout d'une bordure fine pour améliorer le rendu des sous onglets */
+
+.submenu li{
+	border-bottom: 1px solid #CCC
+}
+
+/* Rajout d'un padding , changeant la taille du texte et sa couleur et en 
+définissant une largeur fixe pour ceux ci */
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color:#222538;
+	width: 270px;
+}
+
+/* Rajout d'une couleur */
+.menu-html:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(228, 77, 38, 0.15);
+
+}
+
+.menu-css:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(000, 112, 192, 0.15);
+
+}
+
+.menu-js:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-contact:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+/* Couleur des sous menus */
+
+.menu-html .submenu{
+	background-color: rgb(192, 192, 192);
+}
+
+.menu-css .submenu{
+	background-color: rgb(192, 192, 192);
+}
+
+.menu-js .submenu{
+	background-color: rgb(192, 192, 192);
+}
+
+.submenu li:hover a{
+	color:#EEE;
+	font-weight: bold;
+}
+
+
+/* Couleur des sous menus ( a changer ) */
+
+.menu-html .submenu li:hover{
+	background-color: rgb(32, 32, 32);
+}
+
+.menu-css .submenu li:hover{
+	background-color: rgb(240,240,240);
+}
+
+.menu-js .submenu li:hover{
+	background-color: rgb(200, 165, 75);
+}
+
+.menu-mobile{
+	display: none;
+}
+
+/* On rend notre case à cocher invisible */
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+@media screen and(max-width: 680px){
+	.menu-mobile{
+		display: block;
+		color: #fff;
+		background-color: rgb(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0;
+	}
+	nav ul{
+		display: none;
+	}
+}

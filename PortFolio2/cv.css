@@ -1,0 +1,351 @@
+.Titre1{
+    font-size: 40px;
+}
+
+
+/* Catégorie Compétences */
+.bn{
+	
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* Paramétre du CV */
+
+.page{
+	width: 780px;
+	margin: auto;
+	font-size: 16px;
+	font-family: 'Century Gothic', Calibri, Tahoma, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.infophoto{
+	height : 250px;
+}
+
+.info{
+	float : left;
+}
+
+.photo{
+	float: right;
+	background-color: black;
+}
+
+.sec-gauche{
+	float: left;
+    
+}
+
+.sec-droite{
+	margin-left: 150px;
+}
+
+strong{
+	font-size: 26px;
+}
+
+.section{
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+h2{
+	font-size: 28px;
+	color : #696969;
+	text-transform: uppercase;
+	border-bottom : 3px solid #696969;
+}
+
+.sec-gauche{
+	float: left;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.duree{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.sec-droite{
+	margin-left: 150px;
+}
+
+.titre{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#forma-gauche p{
+	margin-bottom: 37px;
+}
+
+.sec-droite{
+	margin-left: 150px;
+	margin-top: 37px;
+}
+
+/* Fin paramétre du CV */
+
+
+/* Bouton de Téléchargement du CV */
+.DL{
+     text-decoration: none;
+	 float: left;
+	 margin-left: 43%;
+     margin-top: 15px;
+     font-family: 'Century Gothic',sans-serif;
+     font-size: 40px;
+     /*permet le centrage vertical*/
+     text-align: center;
+     color: #000;
+     background: #444;
+     border-radius: 7px;
+     background: background: rgba(0, 0, 0, 0.5);
+     background: linear-gradient( #555, #2C2C2C);
+     padding: 7px;
+}
+
+.DL:hover{
+    background-color: aliceblue;
+    color: gray;
+}
+
+/* Reset de la marge et donner une police a la page web par défaut */
+body{
+	font-family: 'Century Gothic', Arial, sans-serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+    background:url(back.jpg) no-repeat center fixed;
+    background-size:cover;
+    
+}
+ /* Paramétre du bas de page */
+footer{
+	margin-top: 100px;
+	height: 50px;
+	padding-top: 5px;
+	text-align: center;
+	background-color: #C5C5C5;
+	border-top: 2px solid #AAA;
+}
+
+/* Paramétre du 1er Titre */
+header{
+    font-size: 50px;
+    color: gray;
+
+}
+
+
+/* Reset de la marge seulement pour la liste ul qui l'enfant de nav */
+nav > ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* On enlève les puces devant tous les élements li appartenant à notre élément nav */
+nav li{
+	list-style-type: none;
+
+}
+
+/* On affiche seulement les éléments li correspondant à nos onglets de menu en ligne */
+nav > ul > li {
+	float: left;
+}
+
+/* Camoufler les sous menu si on ne passe pas la souris dessus */
+.submenu{
+	display: none;
+}
+
+/* On rend notre case à cocher invisible */
+nav input[type=checkbox]{
+	display: none;
+}
+
+/*On chache le bouton affichant le menu mobile */
+.menu-mobile{
+	display: none;
+}
+
+
+/* Ettirement du menu pour qu'il prenne toute la ligne & couleur de la barre */
+nav{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+/* On affiche seulement les élements li correspondant à
+nos onglets de menu en ligne (côte à côte) */
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+/* Un "hack" CSS ( clearfix) */
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* Changement de type de Display et enlever le trait de soulignement */
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+/* Changement de couleurs de nos liens de menu pour que ce soit visible*/
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFFAFA;
+}
+/* Création de la classe :hover qui permet au sous onglet de s'afficher seulement quand
+la souris passera dessus */
+
+/* Faire en sorte que chaque sous onglet s'affiche sous leurs onglet parent en utilisant
+position:relative pour les onglets en CSS */
+
+/* Deplus reset le padding ( la marge ) de nos sous menus pour ne pas avoir de probléme daffichage */
+
+/* z-index permet au sous menus de safficher par dessus le reste de la page */
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 100000;
+}
+/* Rajout d'une bordure fine pour améliorer le rendu des sous onglets */
+.submenu li{
+	border-bottom: 1px solid #CCC
+}
+/* Rajout d'un padding , changeant la taille du texte et sa couleur et en 
+définissant une largeur fixe pour ceux ci */
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color:#222538;
+	width: 270px;
+}
+
+/* Rajout d'une couleur */
+.menu-html:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(228, 77, 38, 0.15);
+
+}
+
+.menu-css:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(000, 112, 192, 0.15);
+
+}
+
+.menu-js:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-contact:hover{
+	border-top: 5px solid #FFFAFA;
+	background-color: rgba(220, 220, 220, 0.15);
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+/* Couleur des sous menus */
+
+.menu-html .submenu{
+	background-color: rgb(192, 192, 192);
+}
+
+.menu-css .submenu{
+	background-color: rgb(192, 192, 192);
+}
+
+.menu-js .submenu{
+	background-color: rgb(192, 192, 192);
+}
+
+.submenu li:hover a{
+	color:#EEE;
+	font-weight: bold;
+}
+
+
+/* Couleur des sous menus ( a changer ) */
+
+.menu-html .submenu li:hover{
+	background-color: rgb(32, 32, 32);
+}
+
+.menu-css .submenu li:hover{
+	background-color: rgb(240,240,240);
+}
+
+.menu-js .submenu li:hover{
+	background-color: rgb(200, 165, 75);
+}
+
+.menu-mobile{
+	display: none;
+}
+
+/* On rend notre case à cocher invisible */
+
+nav input[type=checkbox]{
+	display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+@media screen and(max-width: 680px){
+	.menu-mobile{
+		display: block;
+		color: #fff;
+		background-color: rgb(29, 197, 151, 0.97);
+		text-align: center;
+		padding: 12px 0;
+	}
+	nav ul{
+		display: none;
+	}
+}
+/* Bouton pour remonter */
+section{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #C5C5C5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}

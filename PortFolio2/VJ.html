@@ -1,0 +1,115 @@
+<head>
+	<title>Veille Juridique</title>
+	<link rel="stylesheet" href="vj.css" style type="text/css">
+	<meta charset="utf-8">
+    <style>
+    body {
+  font-family: Century Gothic, sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
+        
+
+<!-- Catégorie -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Accueil</a>
+  <a href="CV.html">CV</a>
+  <a href="stage.html">Stage</a>
+  <a href="tp.html">TP</a>
+  <a href="ppe.html">PPE</a>
+  <a href="VT.html">Veille technologique</a>
+  <a href="VJ.html">Veille juridique</a>
+  <a href="contact.html">Contact</a>  
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+ <!-- JavaScript l'animation du menu qui se déroule --> 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</head>
+<!-- Corp de la page -->
+<body>
+    <!-- Titre de la page -->
+	   <header>
+		<h1><strong>Veille Juridique</strong><h1>
+		</header>
+    <!-- Article Cyber Harcelement -->        
+ <section>
+        <article class="cyber">
+            <button type="button">
+            <a class="net" href="https://netvib.es/b/fDozR"> Cyber Harcelement </a>
+         </button></article>
+         <article class="Par1">
+                <h3>Qu'est ce que le cyber harcelement ?</h3>
+         	      Le cyber harcelement est tous simplement le fait de tenir des propos ou d'avoir des comportements qui se répéte pour but de dégrader les conditions de vie de la victime (dépréssion, anxieté etc) sur internet. <br> Vue l'ampleur des réseaux sociaux de nos jours le cyber harcelement n'a fait qu'augmenter au fur du temps. Une hausse de 30% entre 2016 et 2017.<br>
+         	      Face a ça l'état met en oeuvre une loi le jeudi 10 mai 2018 condamnant jusqu'a 2 ans d'enprisonnement mais aussi 30 000€ d'amande si l'auteur est majeur. Mais aussi 1 an de prisonnement et 7500€ d'amande si l'auteur est un mineur de plus de 13 ans.<br>Les parents joue un rôle majeur pour y combattre.
+                    <br>
+                    <br>
+                    Source : <a class="link" href="https://www.e-enfance.org/cyber-harcelement"> E-enfance.org </a>
+         </article>
+        <!-- Vidéo CyberHarcelement -->        
+         <div class="vid">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/zUW3JyLtYsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+ </section>
+</body>
+        <!-- Bas de page -->   
+       <footer>
+           <p>Copyright 2020 Bensaid Abdel - Toute reproduction interdite </p>
+       </footer>

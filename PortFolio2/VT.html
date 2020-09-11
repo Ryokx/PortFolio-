@@ -1,0 +1,117 @@
+<head>
+	<title>Veille Technologique</title>
+	<link rel="stylesheet" href="vt.css">
+	<meta charset="utf-8">
+    <style>
+    body {
+  font-family: Century Gothic, sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    <body>
+        
+
+<!-- Catégorie -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Accueil</a>
+  <a href="CV.html">CV</a>
+  <a href="stage.html">Stage</a>
+  <a href="tp.html">TP</a>
+  <a href="ppe.html">PPE</a>
+  <a href="VT.html">Veille technologique</a>
+  <a href="VJ.html">Veille juridique</a>
+  <a href="contact.html">Contact</a>  
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+ <!-- JavaScript l'animation du menu qui se déroule --> 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</head>
+
+<!-- Corp de la page --> 
+<body>
+    <!-- Titre haut de page -->
+	<header>
+		<h1><strong>Veille Technologique</strong></h1>
+	</header>
+    <!-- Article RTX -->
+     <section>
+         <article class="rtx">
+             <button type="button">
+                 <a class="net" href="https://netvib.es/b/fDdTw"> NVIDIA GeForce RTX</a></button>
+         </article>
+            <article class="Par1">
+                <p>Le 20 août 2018 chez Nvidia  a annoncé sa toute nouvelle génération de cartes graphiquela les fameuses RTX 2080 & RTX 2080 Ti. Qui sont sortie le 20 septembre 2018.<br>
+         	    D'aprés leur dire cela serait le commencement d'une nouvelle air dans le monde de la technologie en quelque sorte la CG aurait une nouvelle méthode de rendu de l'éclaire appellé "Ray Tracing".<br> Comparer aux anciennes carte graphique qui simulé un éclairage à partir de différents points de lumière.<br> Le Ray Tracing serait capable de diffuser la lumière dans toute une scène et en se réflétant selon la matière. Tous simplement comme dans la vraie vie.<br>
+         	    La 2080 est considéré de haut de gamme et la 2080 Ti de très haute gamme. Le prix de la 2080 est d'environ 800€ et celle de la 2080 Ti est d'environ 1200€.<br> Une prochaine version serat bientot de sortie la 2070 qui est considéré de moyenne gamme à environ 600€.
+                    <br>
+                    <br>
+                Source : <a class="link" href="https://desbarresdevie.fr/2018/08/23/carte-graphique-nvidia-geforce-rtx-avis/"> Des barres de vie.fr </a>
+            </article>
+        <!-- Vidéo RTX --> 
+            <div class="vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/liIt8d_NgEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </section>
+    
+</body>
+    <!-- Bas de page -->
+    <footer>
+        <p>Copyright 2020 Bensaid Abdel - Toute reproduction interdite </p>
+    </footer>
